@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bliknit project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo"> </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="addresh"><b>Dilvery in 9 minuts</b>
+                    <br><select name="" id="">
+                        <option value="patana junction">patana junction..</option>
+                        <option value="patana junction">gandhi maidan</option>
+                        <option value="patana junction">boring road</option>
+                        <option value="patana junction">hajipur</option>
+                    </select>
+                </div>
+                <div class="search"><input type="text" placeholder="search product"></div>
+                <div class="login">
+                    <!-- <b><a href="login.html">Login</a></b> -->
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            Login
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">User Login</a></li>
+                            <li><a class="dropdown-item" href="login.html">Customer Login</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Link 3</a></li> -->
+                        </ul>
+                    </div>
+
+                    <div class="addcard" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i
+                            class="fa-solid fa-cart-shopping fa-sm"></i>My cart</div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+    <!-- add to card Toggle -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">My card</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="maincollection">
+                <section class="additemhead">
+                    <div class="additemimg"><img
+                            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=180/assets/eta-icons/15-mins-filled.png"
+                            alt=""></div>
+                    <div class="additemtext"><b>Delivery in 8 Minutes</b><br>
+                        <p>Shipment of 1 iteam</p>
+                    </div>
+                </section>
+
+                <section class="additemhead2">
+                    <div class="additemhead2main">
+                        <div class="additemhead2mainimg"><img
+                                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=135/da/cms-assets/cms/product/2107cdc3-8d54-41fb-a7ee-89d8573b9f06.jpg"
+                                alt=""></div>
+                        <div class="additemhead2maininfo">
+                            <p>Amul Misti Pouch</p>
+                            <p class="additemhead2mainimg_name">Crud</p>
+                            <p class="additemhead2mainimg_waight">390 g</p>
+                            <b class="additemhead2mainimg_prise">₹35</b>
+
+                        </div>
+                    </div>
+                    <div class="additemhead2btn"> <b>- 1 +</b> </div>
+                </section>
+            </div>
+            <div class="bill_details">
+                <h4>Bill details</h4>
+                <div class="bill_details_service">
+                    <div class="service_name">
+                        <p><i class="fa-solid fa-table-list"></i>Items total</p>
+                        <p><i class="fa-solid fa-truck"></i>Delivery charge</p>
+                        <p><i class="fa-solid fa-bag-shopping"></i>Handling charge</p>
+                        <p><i class="fa-solid fa-cart-flatbed"></i>Small cart charge</p>
+                        <b>Grand total</b>
+                    </div>
+                    <div class="service_charge">
+                        <p>₹35</p>
+                        <p>₹25</p>
+                        <p>₹2</p>
+                        <p>₹20</p>
+                        <b>₹82</b>
+                    </div>
+                </div>
+            </div>
+            <div class="cancell-policy">
+                <h6>Cancellation Policy</h6>
+                <p>
+                    Orders cannot be cancelled once packed for delivery. In case of unexpected delays, a refund will be
+                    provided, if applicable.</p>
+            </div>
+            <div class="payment-status">
+                <div class="prise-status">
+                    <div class="prise">₹82</div>
+                    <p>TOTAL</p>
+                </div>
+                <div class="go-login">Login to Proceed ></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- image slider -->
+    <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2026-01/Frame-1437256605-2-2.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <!-- <div class="carousel-item">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.WI1MUrM0OMws6qRK6VdR1AHaDn?pid=Api&P=0&h=180"
+                    class="d-block w-100" alt="..." height="350px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.pujaJaDgmPhzbDR8y3o6NwHaC0?pid=Api&P=0&h=180"
+                    class="d-block w-100" alt="..." height="350px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.mwDMDMc5PlbLr1m2bAB6KgHaEK?pid=Api&P=0&h=180"
+                    class="d-block w-100" alt="..." height="350px">
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- catogery navigation -->
+    <div class="catogerys">
+        <div class="item">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png"
+                alt="">
+        </div>
+
+        <div class="item">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"
+                alt="">
+        </div>
+
+
+        <div class="item">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"
+                alt="">
+        </div>
+
+        <div class="item">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png"
+                alt="">
+        </div>
+
+    </div>
+    <!-- </div> -->
+    <!-- catogery2 -->
+    <section class="catogery2">
+        <div class="catogery2-first">
+            <a href="product.html"><img
+                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"
+                    alt="" width="335"></a>
+        </div>
+        <div class="catogery2-second"><a href="product.html"><img
+                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/pet_crystal_WEB-1.png"
+                    alt="" width="335"></a>
+        </div>
+        <div class="catogery2-third"><a href="product.html"><img
+                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/baby_crystal_WEB-1.png"
+                    alt="" width="335"></a>
+        </div>
+    </section>
+
+    <!-- catogery iteams -->
+    <div class="catogery_iteams">
+        <h1>Dairy, Bread & Eggs</h1>
+        <div class="catogery_iteam">
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png">
+                </div>
+                <p>Amul Gold Full Cream Milk</p>
+                <p class="text-muted">500 ml</p>
+                <div class="rs">
+                    <span>₹ 30.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3148adda-43a0-432c-9424-e2e3d6e3e1b1.png">
+                </div>
+                <p>Cow milk</p>
+                <p class="text-muted">500 ml</p>
+                <div class="rs">
+                    <span>₹ 35.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/112a42bf-e422-43fc-98f8-104f03b61970.png">
+                </div>
+                <p>Sudha Dairy Pasteurised Cow Milk</p>
+                <p class="text-muted">300 ml</p>
+                <div class="rs">
+                    <span>₹ 28.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/1f1a15af-1c74-460b-81eb-9fecf9bbda7e.png">
+                </div>
+                <p>Moreish Classic White Bread</p>
+                <p class="text-muted">400 g</p>
+                <div class="rs">
+                    <span>₹ 40.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png">
+                </div>
+                <p>Amul Salted Butter</p>
+                <p class="text-muted">100 g</p>
+                <div class="rs">
+                    <span>₹ 58.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e47341cd-d920-4c0a-a9f2-20d663976cd0.png">
+                </div>
+                <p>Amul Gold Full Cream Milk</p>
+                <p class="text-muted">200 g</p>
+                <div class="rs">
+                    <span>₹ 24.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <h1>Candies & Gums </h1>
+        <div class="catogery_iteam">
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/7420f5a7-bd7b-4c2b-929f-d6034bb254a0.png">
+                </div>
+                <p>Parle Poppins Candyk</p>
+                <p class="text-muted">100 g</p>
+                <div class="rs">
+                    <span>₹ 23.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/12822984-7022-44ea-9975-61892ee10652.png">
+                </div>
+                <p>Chupa Chups Sour Bites Mixed Fruit Candy</p>
+                <p class="text-muted">61g</p>
+                <div class="rs">
+                    <span>₹ 34.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/ae95f84f-4911-4117-a0e7-4726bc7576e6.png">
+                </div>
+                <p>Candyman Choco Double Eclairs Candy</p>
+                <p class="text-muted">262 g</p>
+                <div class="rs">
+                    <span>₹ 45.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6946d3a7-80f3-4a27-859d-65696c7af08b.png">
+                </div>
+                <p>Chupa Chups Sour Belt Mixed Fruit Candy</p>
+                <p class="text-muted">56 g</p>
+                <div class="rs">
+                    <span>₹ 29.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/84af17fc-39fd-44f8-ab89-69cc2bd6c2a6.png">
+                </div>
+                <p>Alpenliebe Juzt Jelly - Strawberry Flavour</p>
+                <p class="text-muted">140 g</p>
+                <div class="rs">
+                    <span>₹ 53.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="iteam">
+                <div class="img-box">
+                    <img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/06c51cd5-e8b4-43df-afa4-e5709bb5edbb.png">
+                </div>
+                <p>Orbit Mixed Fruit Flavour Chewing Gum</p>
+                <p class="text-muted">19 g</p>
+                <div class="rs">
+                    <span>₹ 45.00 </span>
+                    <button class="btn btn-outline-success"> <i class="fa-solid fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- footer ke liye code888888 -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Useful Links -->
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Partner -->
+            <div class="footer-column">
+                <h4>&nbsp;</h4>
+                <ul>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Franchise</a></li>
+                    <li><a href="#">Seller</a></li>
+                    <li><a href="#">Warehouse</a></li>
+                    <li><a href="#">Deliver</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="footer-column wide">
+                <h4>Categories <span class="see-all">see all</span></h4>
+                <div class="category-grid">
+                    <ul>
+                        <li>Vegetables & Fruits</li>
+                        <li>Cold Drinks & Juices</li>
+                        <li>Bakery & Biscuits</li>
+                        <li>Dry Fruits, Masala & Oil</li>
+                        <li>Paan Corner</li>
+                        <li>Pharma & Wellness</li>
+                        <li>Personal Care</li>
+                        <li>Kitchen & Dining</li>
+                    </ul>
+                    <ul>
+                        <li>Dairy & Breakfast</li>
+                        <li>Instant & Frozen Food</li>
+                        <li>Sweet Tooth</li>
+                        <li>Sauces & Spreads</li>
+                        <li>Organic & Premium</li>
+                        <li>Cleaning Essentials</li>
+                        <li>Pet Care</li>
+                        <li>Fashion & Accessories</li>
+                    </ul>
+                    <ul>
+                        <li>Munchies</li>
+                        <li>Tea, Coffee & Milk Drinks</li>
+                        <li>Atta, Rice & Dal</li>
+                        <li>Chicken, Meat & Fish</li>
+                        <li>Baby Care</li>
+                        <li>Home Furnishing & Decor</li>
+                        <li>Beauty & Cosmetics</li>
+                        <li>Electronics & Electricals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>© Blink Commerce Private Limited, 2016-2026</p>
+
+            <div class="app-buttons">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="App Store">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Google Play">
+            </div>
+
+            <div class="social-icons">
+                <i class="fab fa-facebook-f">h</i>
+                <i class="fab fa-x-twitter">e</i>
+                <i class="fab fa-instagram">l</i>
+                <i class="fab fa-linkedin-in">l</i>
+                <i class="fas fa-globe">0</i>
+            </div>
+        </div>
+    </footer>
+    <div class="second_footer">
+        thank for visite my site
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

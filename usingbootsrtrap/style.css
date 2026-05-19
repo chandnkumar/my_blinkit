@@ -1,0 +1,400 @@
+#navbarNavAltMarkup {
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+.container-fluid{
+    height: 50px;
+}
+.navbar{
+    border-bottom: 3px solid #ccc;
+     position: sticky;
+    top: 0px;
+    z-index: 9999;
+   
+}
+.container-fluid .logo{
+   width: 190px;
+    height: 60px;
+    background-image: url("https://visionfundassetsstagesa.z19.web.core.windows.net/1200/blinkit-logo.png");
+    background-size: cover;
+    background-position: center;
+    border-right: 1px solid #ccc;
+}
+select{
+     border: none;       
+  outline: none;      
+ background-color: #f8f9fa;
+}
+   
+.navbar .collapse{
+    z-index: 1;
+    padding: 7px;
+}
+
+.login {
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+.login b:hover{
+    text-decoration: underline;
+}
+ .login a {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+.carousel{
+    margin-top: -20px;
+    width: 100vw;
+    margin-left: -100px;
+}
+/* loginpannal */
+.modal-body input{
+    position: absolute;
+    left: 140px;
+}
+/* add to iteam css*/
+.maincollection .additemhead{
+    display: flex;
+    gap: 20px;
+}
+.additemhead .additemimg img{
+    width: 60px;
+}
+.additemhead2{
+    display: flex;
+    /* border: 2px solid black; */
+    gap: 100px;
+    align-items: center;
+}
+
+.additemhead2 .additemhead2main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.additemhead2mainimg img{
+    width: 80px;
+}
+
+.additemhead2 p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+.additemhead2btn{
+   /* border: 2px solid red; */
+   padding: 1px;
+   width: 50px;
+   text-align: center;
+}
+.offcanvas-body{
+    background-color: #f1f0f0;
+}
+.maincollection{
+    background-color: white;
+    margin: 5px 0px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 4px;
+}
+.bill_details{
+    margin-top: 20px;
+    padding: 0px 2px;
+    background-color: #fff;
+    padding: 9px;
+    /* border: 3px solid red; */
+    border-radius: 10px;
+    font-size: 13px;
+}
+.bill_details_service{
+    display: flex;
+    justify-content: space-between;
+}
+.service_name p{
+margin: 1px;
+}
+.service_charge p{
+    margin: 1px;
+}
+.cancell-policy{
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.cancell-policy h6{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: Okra-bold;
+    font-weight: 700;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    color: rgb(0, 0, 0);
+}
+p{
+    margin: 0;
+}
+.payment-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c831f;
+    color: white;
+    padding: 12px 10px;
+    margin: 8px 0px;
+    border-radius: 5px;
+}
+.payment-status .prise{
+    font-size: 15px;
+    /* font-family: Okra; */
+}
+.payment-status .go-login{
+    font-size: 15px;
+    /* font-family: Okra; */
+
+}
+
+/* 8888888888888 */
+
+.modal-footer a{
+    color: white;
+    text-decoration: none;
+}
+.collapse .addcard {
+    color: white;
+    background-color: #f26f0d;
+    padding: 6px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.collapse .addcard:hover {
+    background-color: green;
+}
+
+.search input {
+    width: 800px;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 0px;
+}
+.carousel{
+    width: 100%;
+}
+
+
+/* imageslider ke baad ka css hai */
+
+.catogerys {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.catogerys .item img{
+    height: 188px;
+    width: 128px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.catogery2{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* .catogerys .item a:hover {
+    background-color: green;
+    text-decoration: underline;
+} */
+/* catogery iteams */
+.catogery_iteams {
+    padding: 10px 20px;
+    margin: 0px 70px;
+    
+}
+
+.catogery_iteam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+     gap: 8px;
+     margin-bottom: 20px;
+    /* padding-left: 40px; */
+}
+
+.catogery_iteam .iteam {
+    /* height: 300px; */
+    width: 180px;
+    padding: 15px;
+    border: 1px solid rgba(62, 62, 62, 0.375);
+    box-shadow: 0px 0px 2px gray;
+}
+.iteam .img-box{
+    text-align: center;
+}
+.iteam p{
+    font-weight: 600;
+}
+.iteam img {
+    height: 80px;
+     filter: drop-shadow(0px 0px 3px black);
+
+}
+/* .iteam img:hover{
+    box-shadow: 4px 4px 3px black;
+} */
+
+.rs {
+    display: flex;
+    justify-content: space-between;
+}
+.rs button{
+    padding: 2px 9px;
+    text-align: center;
+    border-radius: 4px;
+    /* background-color: #d89797; */
+}
+/* .rs button:hover{
+   background-color: greenyellow;
+   font-weight: bold;
+   box-shadow:4px 4px 5px #000;
+} */
+
+
+/* footer ke liye style hai 888888 */
+
+.footer {
+    background: #fff;
+    border-top: 1px soli black;
+    padding: 40px
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-column ul li:hover,
+.footer-column ul li a:hover {
+    color: #0c831f;
+}
+
+.wide {
+    flex: 1;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.see-all {
+    color: #0c831f;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
+
+.app-buttons img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.social-icons i {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.second_footer{
+    font-size: 40px;
+    background-color: aquamarine;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+/* 
+#carouselExampleSlidesOnly {
+    
+    display: none;
+ }
+ .footer{
+    display: none;
+ }
+ .second_footer{
+    display: block;
+ }
+ 
+} */
+
+
+
+/*  */

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Payment Method</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   
+    <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    gap: 30px;
+}
+
+/* LEFT */
+.payment-section {
+    flex: 2;
+}
+
+.payment-section h2 {
+    margin-bottom: 20px;
+}
+
+.payment-box {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.payment-item {
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment-item:last-child {
+    border-bottom: none;
+}
+
+.payment-item p {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.payment-item i {
+    color: #555;
+}
+
+.payment-item.disabled {
+    color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+/* RIGHT */
+.summary-section {
+    flex: 1;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-item h5 {
+    font-size: 14px;
+}
+
+.cart-item p {
+    font-size: 13px;
+    color: #777;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 14px;
+    background: #d1d1d1;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SECTION -->
+    <div class="payment-section">
+        <h2>Select Payment Method</h2>
+
+        <div class="payment-box">
+            <div class="payment-item">
+                <span>Wallets</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="payment-item">
+                <span>Add credit or debit cards</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="payment-item">
+                <span>Netbanking</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="payment-item">
+                <span>Add new UPI ID</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="payment-item disabled">
+                <div>
+                    <span>Cash</span>
+                    <p>This payment method is not available at the moment</p>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="payment-item">
+                <span>Pay Later</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="summary-section">
+
+        <div class="card">
+            <h4>Delivery Address</h4>
+            <p>
+                Other: Floor 1, budha colony gugradevi sthan 23, gugra devi sthan,
+                Buddha Colony, Patna
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="cart-header">
+                <h4>My Cart</h4>
+                <span>1 item</span>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://i.imgur.com/9yG6m5Q.png" alt="item">
+                <div>
+                    <h5>Amul Masti Pouch Curd</h5>
+                    <p>390 g</p>
+                    <strong>₹35</strong>
+                </div>
+            </div>
+
+            <button class="pay-btn">Pay Now</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
